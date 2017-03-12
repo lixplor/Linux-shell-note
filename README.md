@@ -3,6 +3,6 @@
 ## 学习内容
 
 * [Linux教程](http://www.runoob.com/linux/linux-tutorial.html)
-    - [ ] Linux部分
-    - [ ] Shell部分
+    - [x] Linux部分
+    - [x] Shell部分
 * 鸟哥私房菜系列
