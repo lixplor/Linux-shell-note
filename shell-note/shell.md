@@ -75,7 +75,7 @@
     - 无引号: `hello`
 * 字符串拼接
     - 直接连接要拼接的字符串或变量, 中间不要有空格
-    - 示例: `echo $user "is " $age " years old"
+    - 示例: `echo $user" is "$age" years old"`
 * 字符串长度
     - `${#字符串变量}`
     - 示例: `echo ${#username}`
