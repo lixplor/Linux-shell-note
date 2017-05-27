@@ -107,7 +107,7 @@ G
 %
 
 # 移动到下一个匹配的单词
-* 
+*
 # 移动到上一个匹配的单词
 #
 ```
@@ -152,6 +152,87 @@ Ctrl+r
 
 # 重复上次操作n次, 如2dd, 3p, 100idesu [ESC], 3.
 n<command>
+```
+
+
+## `.vimrc`配置文件
+
+* 创建`.vimrc`作为配置文件
+    - `vim`默认安装目录下有配置模板, 可以查看模板进行配置
+    - 主题在`vim`目录下寻找
+    - `"`: 双引号是注释
+
+```vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Displaying
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" theme. Dir: /usr/share/vim/vim74/colors
+colorscheme desert
+
+" display current filename in window titlebar
+set title
+
+" display current cursor position in bottom right
+set ruler
+
+" high-light current line
+set cursorline
+
+" high-light current column
+set cursorcolumn
+
+" beautify cursor high-light
+highlight CursorLine term=bold cterm=bold ctermbg=Grey guibg=Grey20
+highlight CursorColumn term=NONE cterm=NONE ctermbg=Grey guibg=Grey20
+
+" change cursor shape in different mode. 0: verticle line; 1: block; 2: und    erline
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=1\x7"  " edit insert mode
+
+" high-light search result
+set hlsearch
+
+" high-light matching quotes
+set showmatch
+
+" show line number
+set number
+
+" auto indent
+set autoindent
+
+" syntax high-light
+syntax on
+
+" indent space length
+set shiftwidth=4
+
+" backspace tab length
+set softtabstop=4
+
+" tab length
+set tabstop=4
+
+" use space instead of tab & indent
+set expandtab
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" File setting
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" file encoding
+set encoding=utf-8
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Help language
+"set helplang=cn
 ```
 
 
